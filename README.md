@@ -18,7 +18,9 @@ If not, here are sample querries
 GET:
 
 http://localhost:8080/api/prescriptions
+
 http://localhost:8080/api/prescriptions/1
+
 http://localhost:8080/api/prescriptions/1/administrations
 
 DELETE:
@@ -40,6 +42,7 @@ with json body:
 }
 
 PUT:
+
 http://localhost:8080/api/prescriptions/1
 
 with json body:
@@ -56,7 +59,9 @@ with json body:
 GET
 
 http://localhost:8080/api/prescriptions   (gets all prescriptions)
+
 http://localhost:8080/api/prescriptions/{id}   (gets prescription with given id)
+
 http://localhost:8080/api/prescriptions/{id}/administrations   (gets prescription administration times for given id)
 
 DELETE
