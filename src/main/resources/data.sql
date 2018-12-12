@@ -1,0 +1,3 @@
+insert into prescription (name, unit, start_time, end_time, timing_hours_period) values('Lekadol', 500, '2018-06-15T13:30:00', '2018-06-15T18:00:00',1)
+insert into prescription (name, unit, start_time, end_time, timing_hours_period) values('Nargesin', 5400, '2018-06-15T11:30:00', '2018-06-15T13:00:10',3)
+insert into prescription (name, unit, start_time, end_time, timing_hours_period) values('Sirup', 530, '2018-06-15T11:30:00', '2018-06-15T18:02:00',0.3)
