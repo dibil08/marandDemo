@@ -43,7 +43,7 @@ public class PrescriptionService {
         Prescription prescription = this.getPrescription(prescriptionId);
         List<LocalTime> administartionTimes = new ArrayList<>();
         for (Timestamp currTime = prescription.getStart_time();
-             currTime.after(prescription.getEnd_time());
+             currTime.before(prescription.getEnd_time());
              //Add multiply with 3600000 to get miliseconds from hour period
              currTime.setTime(currTime.getTime() + (long) (prescription.getTiming_hours_period() * 3600000))) {
             administartionTimes.add(currTime.toLocalDateTime().toLocalTime());
